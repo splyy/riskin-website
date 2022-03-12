@@ -1,0 +1,39 @@
+html { 
+    background: url(../assets/images/background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    width: 400px;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.circle-link a {
+    display: block;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    width: 4em; 
+    height: 4em;
+    margin: -2em;
+}
+
+.twitter { transform: rotate(72deg) translate(15em) rotate(-72deg); }
+.twitch { transform: rotate(144deg) translate(15em) rotate(-144deg); }
+.instagram { transform: rotate(360deg) translate(15em) rotate(-360deg); }
+.discord { transform: rotate(216deg) translate(15em) rotate(-216deg); }
+.youtube { transform: rotate(288deg) translate(15em) rotate(-288deg); }
