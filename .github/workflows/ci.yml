@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - develop
+      - gh-pages
 
 jobs:
   build-and-deploy:
@@ -16,5 +17,5 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.5
         with:
-          branch: develop # The branch the action should deploy to.
+          branch: gh-pages # The branch the action should deploy to.
           folder: src # The folder the action should deploy.
