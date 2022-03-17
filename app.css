@@ -1,0 +1,133 @@
+@font-face {
+    font-family: "UniNeueBold";
+    src: url(./assets/fonts/UniNeueBold.ttf);
+}
+
+html { 
+    background: url(./assets/images/background.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+  
+.social-list {
+    font-family: "UniNeueBold";
+    font-size: 4.25rem;
+    line-height: 1.5;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: rotateX(-10deg) rotateY(20deg);
+}
+  
+.social-item {
+    position: relative;
+    color: transparent;
+    cursor: pointer;
+}
+
+.social-item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 49%;
+    left: -10%;
+    right: -10%;
+    height: 4px;
+    border-radius: 4px;
+    margin-top: -2px;
+    transform: scale(0);
+    transition: transform 0.8s cubic-bezier(0.16, 1.08, 0.38, 0.98);
+    z-index: 1;
+}
+  
+.mask {
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    height: 49%;
+    transition: all 0.8s cubic-bezier(0.16, 1.08, 0.38, 0.98);
+}
+
+.twitter .mask {
+    color: #1DA1F2;
+}
+
+.twitter::before {
+    background: #1DA1F2;
+}
+
+.instagram .mask {
+    color: #cc2366;
+}
+
+.instagram::before {
+    background: #f09433; 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+}
+
+.twitch .mask {
+    color: #6441a5;
+}
+
+.twitch::before {
+    background: #6441a5;
+}
+
+.discord .mask {
+    color: #5865F2;
+}
+
+.discord::before {
+    background: #5865F2;
+}
+
+.youtube .mask {
+    color: #FF0000;
+}
+
+.youtube::before {
+    background: #FF0000;
+}
+
+.mask span {
+    display: block;
+}
+  
+.mask + .mask {
+    top: 48.9%;
+    height: 51.1%;
+}
+
+.mask + .mask span {
+    transform: translateY(-49%);
+}
+
+.social-item:hover .mask,
+.social-item:active .mask {
+    color: #fff;
+    transform: skewX(12deg) translateX(5px);
+}
+
+.social-item:hover .mask + .mask,
+.social-item:active .mask + .mask {
+    transform: skewX(12deg) translateX(-5px);
+}
+
+.social-item:hover::before,
+.social-item:active::before {
+    transform: scale(1);
+}
