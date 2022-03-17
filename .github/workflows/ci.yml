@@ -8,18 +8,6 @@ on:
       - 'v*.*.*'
 
 jobs:
-  build:
-    name: Build and deploy
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@3.7.1
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: main
-          FOLDER: src
-          CLEAN: true
   deploy:
     runs-on: ubuntu-20.04
     concurrency:
