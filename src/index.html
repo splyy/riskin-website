@@ -5,32 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Riskin - Website</title>
+    <link rel="icon" type="image/png" href="./assets/images/favicon.ico" />
     <link rel="stylesheet" href="../src/app.css" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="container">
-        <span>
-            <img class="logo" src="../src/assets/images/logo.png" alt="Riskin">
-        </span>
-
-        <nav class="circle-link">
-            <a href="https://www.twitter.com/riskin" class="absolute-link twitter">
-                <img src="../src/assets/images/twitter.png" width="40" />
-            </a>
-            <a href="https://www.instagram.com/rsknxzu" class="absolute-link instagram">
-                <img src="../src/assets/images/instagram.png" width="40" />
-            </a>
-            <a href="https://www.twitch.tv/riskin" class="absolute-link twitch">
-                <img src="../src/assets/images/twitch.png" width="40" />
-            </a>
-            <a href="https://discord.gg/PfEWhBj" class="absolute-link discord">
-                <img src="../src/assets/images/discord.png" width="40" />
-            </a>
-            <a href="https://www.youtube.com/riskinhd" class="absolute-link youtube">
-                <img src="../src/assets/images/youtube.png" width="40" />
-            </a>
-        </nav>
+        <ul class="social-list">
+          <li class="social-item twitter" data-href="https://twitter.com/rsknxzu">
+            Twitter
+            <span class="mask"><span>Twitter</span></span>
+            <span class="mask"><span>Twitter</span></span>
+          </li>
+          <li class="social-item instagram" data-href="https://www.instagram.com/rsknxzu/">
+            Instagram
+            <span class="mask"><span>Instagram</span></span>
+            <span class="mask"><span>Instagram</span></span>
+          </li>
+          <li class="social-item twitch" data-href="https://www.twitch.tv/Riskin">
+            Twitch
+            <span class="mask"><span>Twitch</span></span>
+            <span class="mask"><span>Twitch</span></span>
+          </li>
+          <li class="social-item discord" data-href="https://discord.gg/XA9UHhq">
+            Discord
+            <span class="mask"><span>Discord</span></span>
+            <span class="mask"><span>Discord</span></span>
+          </li>
+          <li class="social-item youtube" data-href="https://www.youtube.com/riskinhd">
+            Youtube
+            <span class="mask"><span>Youtube</span></span>
+            <span class="mask"><span>Youtube</span></span>
+          </li>
+        </ul>
     </div>
+
+      <script type="text/javascript" src="./app.js"></script>
 </body>
 </html>
